@@ -2,6 +2,8 @@
 get_prop(system_server, vendor_camera_prop)
 get_prop(system_server, camera_prop)
 
+allow system_server vendor_default_prop:file read;
+
 # Smart charger
 allow system_server sysfs_battery_supply:file { getattr open write };
 
