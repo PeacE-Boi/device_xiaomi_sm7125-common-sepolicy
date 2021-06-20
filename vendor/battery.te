@@ -30,7 +30,7 @@ allow battery_daemons vendor_sysfs_usb_supply:file w_file_perms;
 allow battery_daemons vendor_sysfs_usbpd_device:file w_file_perms;
 allow battery_daemons self:global_capability_class_set sys_tty_config;
 allow battery_daemons self:global_capability_class_set sys_boot;
-allow battery_daemons self:netlink_kobject_uevent_socket create_socket_perms_no_ioctl;
+#allow battery_daemons self:netlink_kobject_uevent_socket create_socket_perms_no_ioctl;
 allow battery_daemons self:capability { chown fsetid };
 
 wakelock_use(battery_daemons)
